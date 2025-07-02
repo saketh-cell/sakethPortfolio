@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section className="contact-section" id="contact">
       <h2>Contact Me</h2>
-      <p className="contact-text">Have a project in mind or just want to say hi? Feel free to reach out!</p>
+      <p className="contact-text">Let’s ‘console.log’ a conversation. Whether it’s ideas or memes, I’m all ears!</p>
 
       <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
         <input type="text" placeholder="Your Name" required />
