@@ -61,6 +61,23 @@
 /* 📱 Responsive layout for small screens */
 @media (max-width: 768px) {
   .projects-grid {
-    grid-template-columns: 1fr; /* Stack one per row */
+    grid-template-columns: 1fr;
+  }
+
+  .projects-section {
+    padding: 2rem;
+  }
+
+  .projects-section h2 {
+    font-size: 2rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
   }
 }
+
