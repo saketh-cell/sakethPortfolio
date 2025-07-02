@@ -17,7 +17,7 @@ const Contact = () => {
       <div className="social-links">
         <a href="https://github.com/saketh-cell" target="_blank" rel="noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/saketh-pusuluru-a614b6279" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="mailto:prasadp87851@gmail.com">Email</a>
+        <a href="prasadp87851@gmail.com">Email</a>
       </div>
     </section>
   );
