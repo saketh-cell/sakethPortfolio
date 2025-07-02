@@ -60,16 +60,21 @@
 
 /* 📱 Responsive layout for small screens */
 @media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
+  .projects-section {
+    padding: 2rem 5vw;
   }
 
-  .projects-section {
-    padding: 2rem;
+  .projects-grid {
+    grid-template-columns: 1fr; /* Stack cards */
   }
 
   .projects-section h2 {
     font-size: 2rem;
+    text-align: center;
+  }
+
+  .project-card {
+    padding: 1rem;
   }
 
   .project-card h3 {
@@ -79,5 +84,10 @@
   .project-card p {
     font-size: 0.95rem;
   }
+
+  .project-links a {
+    font-size: 0.95rem;
+  }
 }
+
 

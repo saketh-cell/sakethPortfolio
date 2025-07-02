@@ -12,19 +12,14 @@
   z-index: 100;
 }
 
+/* Your Name */
 .logo {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #111;
-  font-family: 'Courier New', monospace;
-  letter-spacing: 1px;
-}
-
-.highlighted {
   color: #007bff;
+  font-family: 'Courier New', monospace;
 }
 
-/* Nav links */
 .navbar-right {
   display: flex;
   gap: 2rem;
@@ -61,3 +56,29 @@
 .navbar-right a:hover::after {
   width: 100%;
 }
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;         /* ✅ Stays in row layout */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vw;
+    height: 60px;                /* Slightly shorter on mobile */
+  }
+
+  .logo {
+    font-size: 1.2rem;           /* Smaller font for name */
+  }
+
+  .navbar-right {
+    gap: 1rem;                   /* Less space between items */
+  }
+
+  .navbar-right a {
+    font-size: 0.95rem;          /* Smaller font size */
+  }
+
+  .navbar-right a::after {
+    height: 1.5px;               /* Thinner underline */
+  }
+}
+

@@ -1,16 +1,15 @@
-/* Fullscreen Flex Layout */
+/* Desktop layout */
 .home-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 5vw;
   background: linear-gradient(135deg, #f0f4f8, #d9e4f5);
-  min-height: 100vh; /* ✅ use min-height */
+  min-height: 100vh;
   width: 100vw;
 }
 
-
-/* Left Side: Text */
+/* Left Side */
 .home-left {
   flex: 1;
   padding-right: 2rem;
@@ -53,15 +52,13 @@
   background-color: #0056b3;
 }
 
-/* Right Side: Image */
+/* Right Side */
 .home-right {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 100px; 
 }
-
 
 .profile-pic {
   width: 350px;
@@ -72,27 +69,43 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Responsive Design */
+/* ✅ Mobile Layout Fix */
 @media (max-width: 768px) {
   .home-container {
     flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 4vw;
   }
 
-  .home-left, .home-right {
+  .home-left,
+  .home-right {
     flex: unset;
+    width: 100%;
     padding: 0;
   }
 
-  .profile-pic {
-    width: 180px;
-    height: 180px;
+  .home-right {
+    display: flex;
+    justify-content: center;   /* ✅ Horizontally center */
+    align-items: center;       /* ✅ Vertically center if needed */
     margin-bottom: 1.5rem;
   }
 
+  .profile-pic {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #007bff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;            /* ✅ Ensure image itself is centered */
+    display: block;
+  }
+
   .home-left h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .home-left h2 {
@@ -101,6 +114,11 @@
 
   .home-left p {
     font-size: 1rem;
+  }
+
+  .contact-btn {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
   }
 }
 
